@@ -532,5 +532,26 @@
     "description": "Remove the unused space in topbar.",
     "code": ".Kgjmt7IX5samBYUpbkBu, .OPsY6bKl1_FfA8jFpq1V { display: none !important; }",
     "preview": "resources/assets/snippets/remove-unused-space.png"
+  },
+  {
+    "title": "Lebron face",
+    "description": "Lebron face on the progressbar",
+    "code": ".player-controls .playback-progressbar .progress-bar::before {
+    content: '';
+    width: 55px;
+    height: 55px;
+    bottom: calc(40%);
+    left: var(--progress-bar-transform);
+    position: absolute;
+    transition: left var(--progress-bar-duration);
+    transform: translate(-15px, 0px);
+    image-rendering: auto;
+    background-size: 55px 55px;
+    background-image: url('https://imgur.com/a/TX0tglN');
+    background-repeat: no-repeat;
+    z-index: 9999;
+    pointer-events: none;
+}",
+    "preview": "https://imgur.com/a/TX0tglN"
   }
 ]
